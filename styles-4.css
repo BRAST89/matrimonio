@@ -1,0 +1,207 @@
+/* Estilos para el iframe */
+#lugar iframe {
+  width: 100%; /* Asegura que el iframe se ajuste al contenedor */
+  height: 300px; /* Ajusta la altura según lo necesites */
+  border: 0;
+  border-radius: 5px; /* Redondea las esquinas del iframe */
+}
+
+/* Estilos generales */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Color de fondo general, puedes ajustar esto según lo que quieras */
+}
+
+.hero {
+  background-image: url('images/fotos/2.jpg'); /* Ruta a la imagen en la carpeta images */
+  height: 100vh; /* Altura de la ventana gráfica */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 90%; /* Limita el ancho del texto */
+  box-sizing: border-box; /* Incluye el relleno y borde en el ancho total */
+}
+
+.content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0); /* Totalmente transparente */
+  min-height: 100vh; /* Asegura que haya suficiente contenido para desplazar */
+  position: relative;
+}
+
+.section {
+  margin-bottom: 30px;
+  background-color: rgba(254, 254, 246, 0.8); /* Beige claro con algo de opacidad */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+  color: #333; /* Color de texto */
+}
+
+.section h3 {
+  margin-top: 0;
+}
+
+#buzon form {
+  display: flex;
+  flex-direction: column;
+}
+
+#buzon textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#buzon button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #716c41;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#buzon button:hover {
+  background-color: #5c532f;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  min-width: 250px; /* Asegura que las secciones no se vuelvan demasiado pequeñas */
+  margin: 10px;
+}
+
+.with-background {
+  background-size: cover;
+  background-position: center;
+  color: rgb(47, 45, 45); /* Cambia el color del texto a blanco para mayor contraste */
+}
+
+#vestuario.with-background {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vestuario-content {
+  flex: 1;
+}
+
+.vestuario-image {
+  flex: 0 0 150px; /* Ajusta el ancho de la imagen */
+}
+
+.vestuario-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .hero-text {
+    bottom: 10px;
+    left: 10px;
+    padding: 8px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  #buzon textarea {
+    height: 80px;
+  }
+
+  .sections-container {
+    flex-direction: column;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  #vestuario.with-background {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vestuario-image {
+    margin-top: 20px;
+    flex: none;
+  }
+
+  .vestuario-image img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  #buzon textarea {
+    height: 60px;
+  }
+
+  .sections-container {
+    flex-direction: column;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  #vestuario.with-background {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vestuario-image {
+    margin-top: 20px;
+    flex: none;
+  }
+
+  .vestuario-image img {
+    width: 80%;
+    height: auto;
+  }
+}
